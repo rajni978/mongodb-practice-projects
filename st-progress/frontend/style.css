@@ -1,0 +1,229 @@
+/* ===== Reset ===== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===== Body ===== */
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background: #f5f7ff;
+    color: #333;
+
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 30px 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    transform: translateY(-20px);
+}
+/* ===== Heading ===== */
+
+h1 {
+    text-align: center;
+    color: #4f46a5;
+    font-size: 34px;
+    margin-bottom: 30px;
+}
+
+h1::after {
+    content: " 🎓";
+    font-size: 28px;
+}
+
+/* ===== Form ===== */
+
+form {
+    background: white;
+    padding: 28px;
+    border-radius: 18px;
+    box-shadow: 0 8px 25px rgba(79, 70, 165, 0.08);
+    border: 1px solid #e8e7f5;
+}
+
+/* ===== Labels ===== */
+
+label {
+    display: block;
+    color: #4b4960;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+/* ===== Inputs ===== */
+
+input {
+    width: 100%;
+    height: 46px;
+    padding: 12px 14px;
+    margin-bottom: 20px;
+
+    border: 1px solid #dcdbea;
+    border-radius: 10px;
+
+    background: #fafaff;
+    color: #333;
+
+    font-size: 15px;
+    font-family: inherit;
+
+    outline: none;
+    transition: 0.2s ease;
+}
+
+/* ===== Input Focus ===== */
+
+input:focus {
+    border-color: #8177d8;
+    background: white;
+    box-shadow: 0 0 0 3px rgba(129, 119, 216, 0.12);
+}
+
+/* ===== Placeholder ===== */
+
+input::placeholder {
+    color: #aaa8b7;
+}
+
+/* ===== Button ===== */
+
+button {
+    width: 100%;
+    padding: 13px;
+
+    border: none;
+    border-radius: 10px;
+
+    background: #6c63c9;
+    color: white;
+
+    font-size: 16px;
+    font-weight: 600;
+    font-family: inherit;
+
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+button:hover {
+    background: #574fb2;
+    transform: translateY(-1px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+/* ===== Response Message ===== */
+
+#responseMessage {
+    text-align: center;
+    min-height: 22px;
+    margin: 18px 0;
+
+    color: #5c54a8;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* ===== Progress List ===== */
+
+#progressList {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 18px;
+    margin-top: 20px;
+}
+
+/* ===== Student Card ===== */
+
+.progress-card {
+    background: white;
+    padding: 22px;
+
+    border-radius: 16px;
+    border: 1px solid #e8e7f5;
+
+    box-shadow: 0 6px 20px rgba(60, 55, 100, 0.07);
+
+    transition: 0.2s ease;
+}
+
+.progress-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 28px rgba(60, 55, 100, 0.12);
+}
+
+/* ===== Student Name ===== */
+
+.progress-card h3 {
+    color: #4f46a5;
+    font-size: 19px;
+    margin-bottom: 8px;
+}
+
+/* ===== Course ===== */
+
+.progress-card p {
+    color: #666477;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+/* ===== Progress Text ===== */
+
+.progress-card strong {
+    color: #44415a;
+}
+
+/* ===== Progress Bar ===== */
+
+.progress-bar {
+    width: 100%;
+    height: 9px;
+
+    background: #eeeef8;
+    border-radius: 20px;
+
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+.progress-fill {
+    height: 100%;
+    background: #7b72d2;
+    border-radius: 20px;
+
+    transition: width 0.4s ease;
+}
+
+/* ===== Mobile ===== */
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 25px 15px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    form {
+        padding: 20px;
+    }
+
+    #progressList {
+        grid-template-columns: 1fr;
+    }
+}

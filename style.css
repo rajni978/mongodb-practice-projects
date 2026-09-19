@@ -1,0 +1,327 @@
+
+/* ================================
+   GLOBAL STYLES
+================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #f7faf8;
+    color: #24352c;
+    min-height: 100vh;
+}
+
+
+/* ================================
+   HEADER
+================================ */
+
+header {
+    text-align: center;
+    padding: 70px 20px 55px;
+
+    background: linear-gradient(
+        135deg,
+        #e8f6ee,
+        #f7faf8
+    );
+}
+
+.badge {
+    display: inline-block;
+
+    padding: 8px 16px;
+    margin-bottom: 18px;
+
+    background: #dff2e7;
+    color: #2f7650;
+
+    border-radius: 30px;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    letter-spacing: 0.3px;
+}
+
+header h1 {
+    font-size: 42px;
+    font-weight: 700;
+
+    color: #173b2b;
+
+    margin-bottom: 14px;
+
+    letter-spacing: -1px;
+}
+
+header p {
+    max-width: 650px;
+
+    margin: 0 auto;
+
+    color: #68776f;
+
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+
+/* ================================
+   PROJECT SECTION
+================================ */
+
+.projects {
+    max-width: 1050px;
+
+    margin: 0 auto;
+
+    padding: 55px 20px 70px;
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 28px;
+}
+
+
+/* ================================
+   PROJECT CARD
+================================ */
+
+.card {
+    position: relative;
+
+    background: #ffffff;
+
+    padding: 32px;
+
+    border: 1px solid #e3ebe6;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 8px 25px rgba(40, 80, 60, 0.07);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        border-color 0.25s ease;
+}
+
+
+/* Card hover */
+
+.card:hover {
+    transform: translateY(-7px);
+
+    border-color: #a9d5bb;
+
+    box-shadow:
+        0 16px 35px rgba(40, 80, 60, 0.12);
+}
+
+
+/* ================================
+   PROJECT NUMBER
+================================ */
+
+.project-number {
+    position: absolute;
+
+    top: 22px;
+    right: 25px;
+
+    width: 36px;
+    height: 36px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background: #edf8f1;
+
+    color: #39815a;
+
+    border-radius: 50%;
+
+    font-size: 13px;
+
+    font-weight: 600;
+}
+
+
+/* ================================
+   PROJECT ICON
+================================ */
+
+.icon {
+    width: 54px;
+    height: 54px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background: #e8f6ee;
+
+    border-radius: 15px;
+
+    font-size: 25px;
+
+    margin-bottom: 22px;
+}
+
+
+/* ================================
+   CARD CONTENT
+================================ */
+
+.card h2 {
+    color: #173b2b;
+
+    font-size: 22px;
+
+    margin-bottom: 12px;
+}
+
+.card p {
+    color: #68776f;
+
+    font-size: 15px;
+
+    line-height: 1.7;
+
+    min-height: 75px;
+
+    margin-bottom: 23px;
+}
+
+
+/* ================================
+   VIEW PROJECT BUTTON
+================================ */
+
+.card a {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    padding: 11px 18px;
+
+    background: #286344;
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+    border-radius: 9px;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    transition:
+        background-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.card a:hover {
+    background: #19482f;
+
+    transform: translateX(3px);
+}
+
+
+/* ================================
+   FOOTER
+================================ */
+
+footer {
+    text-align: center;
+
+    padding: 26px 20px;
+
+    border-top: 1px solid #e3ebe6;
+
+    color: #89968f;
+
+    font-size: 14px;
+}
+
+footer span {
+    color: #39815a;
+
+    font-weight: 600;
+}
+
+
+/* ================================
+   TABLET
+================================ */
+
+@media (max-width: 750px) {
+
+    header {
+        padding: 55px 20px 40px;
+    }
+
+    header h1 {
+        font-size: 34px;
+    }
+
+    header p {
+        font-size: 15px;
+    }
+
+    .projects {
+        grid-template-columns: 1fr;
+
+        padding-top: 40px;
+    }
+}
+
+
+/* ================================
+   MOBILE
+================================ */
+
+@media (max-width: 450px) {
+
+    header h1 {
+        font-size: 29px;
+    }
+
+    header p {
+        font-size: 14px;
+    }
+
+    .projects {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .card {
+        padding: 25px;
+    }
+
+    .card h2 {
+        font-size: 20px;
+    }
+
+    .card p {
+        font-size: 14px;
+    }
+}
+
+
